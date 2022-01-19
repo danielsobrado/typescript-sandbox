@@ -15,7 +15,7 @@ const myUsers: User[] = [{id: 1, name: "Pedro"}, {id: 2, name: "Luis"}, {id: 3, 
 
 
 let filterIdsCount = myUsers.reduce(
-    (previousId, currUser) => currUser.id % 2 === 0 ? 1 : previousId + 1 , 0             
+    (count, currUser) => currUser.id % 2 === 1 ? count + 1 : count , 0             
 );
 
 console.log(filterIdsCount)
